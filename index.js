@@ -1,3 +1,4 @@
+//----------POST------------
 // let data={
 //     name:"Raj",
 //     gender:"Male",
@@ -22,22 +23,41 @@
 // })
 
 //--------PUT---------
-let data={
-    name:"MuthuMani",
-    gender:"Male",
-    email:"muthumani@gmail.com",
-    status:"InActive",
-}
+// let data={
+//     name:"MuthuMani",
+//     gender:"Male",
+//     email:"muthumani@gmail.com",
+//     status:"InActive",
+// }
+// let Options={
+//     method:"PUT",
+//     headers:{
+//         "Content-Type":"application/json",
+//         Accept:"application/json",
+//         Authorization:"Bearer cc9a788bd50afcfbbc87fd69e6a88228cb421b60f9b38a1f44a891802f59d8ef"
+//     },
+//     body: JSON.stringify(data)
+// };
+// fetch("https://gorest.co.in/public/v2/users/7183827", Options)
+// .then(function (response){
+//     return response.json()
+// })
+// .then(function (jsonData){
+//     console.log(jsonData);
+// })
+
+
+// ----------DETELE--------
 let Options={
-    method:"PUT",
+    method:"DELETE",
     headers:{
         "Content-Type":"application/json",
         Accept:"application/json",
         Authorization:"Bearer cc9a788bd50afcfbbc87fd69e6a88228cb421b60f9b38a1f44a891802f59d8ef"
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify()
 };
-fetch("https://gorest.co.in/public/v2/users/7184055", Options)
+fetch("https://gorest.co.in/public/v2/users/7183829", Options)
 .then(function (response){
     return response.json()
 })
